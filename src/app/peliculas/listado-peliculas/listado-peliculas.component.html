@@ -1,27 +1,27 @@
-<div *ngIf="!peliculas">
-    <img src="https://www.grupogaldiaz.com/wp-content/plugins/plugin-yape-qr/assets/loader.gif" >
-  </div>
-  
-  <div *ngIf="peliculas?.length === 0">
-    <p>No hay Películas para mostrar</p>
-  </div>
-  
-  <ng-container *ngIf="peliculas && peliculas.length > 0">
-  
-  <div *ngFor="let pelicula of peliculas; let index = index" class="pelicula-contenedor">
-  
-  
-  <div>
-    pelicula {{index}} : {{pelicula.titulo | uppercase}}
-    <button style="margin-left: 1rem;" (click)="remover(index)">Remover</button>
-  </div>
-  
-  <div>
-    {{pelicula.fechaLanzamiento | date:"dd-MMMM-yyyy"}}
-  </div>
-  
-  <div>
-    {{pelicula.precio | currency}}
-  </div>
-  </div>
-</ng-container>
+<app-listado-generico [listado]="peliculas">
+  <ng-container vacio>
+    <div>Mensaje personalizado para contenido <b>vacío</b></div>
+  </ng-container>
+
+  <ng-container contenido>
+    <div
+      *ngFor="let pelicula of peliculas; let index = index"
+      class="pelicula-contenedor"
+    >
+      <div>
+        pelicula {{ index }} : {{ pelicula.titulo | uppercase }}
+        <button style="margin-left: 1rem" (click)="remover(index)">
+          Remover
+        </button>
+      </div>
+
+      <div>
+        {{ pelicula.fechaLanzamiento | date : "dd-MMMM-yyyy" }}
+      </div>
+
+      <div>
+        {{ pelicula.precio | currency }}
+      </div>
+    </div>
+  </ng-container>
+</app-listado-generico>
