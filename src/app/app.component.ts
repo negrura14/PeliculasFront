@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
     }, 2000);
   }
   title = 'front-end';
+  ocultar = false;
   peliculasEnCines: any;
   peliculasProximosEstrenos = [];
 
