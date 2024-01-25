@@ -2,32 +2,6 @@
 
 <div class="contenedor">
 
-
-
-  <!-- <input type="text" (input)="title = ($any($event).target.value)"/>
-
-  <div>
-    <div>
-      <input type="checkbox" checked (change)="ocultar = !ocultar" /> Ocultar
-    </div>
-  </div>
-
-  <app-ciclo-de-vida *ngIf="ocultar" [titulo]="title"></app-ciclo-de-vida> -->
-
-
-  <!-- <input type="file" style="display: none" #cargador />
-
-  <button (click)="cargador.click()">Cargar Archivo</button>
-
-  <app-rating (rated)="manejarRated($event)"></app-rating> -->
+  <router-outlet></router-outlet>
   
-  <h2>En cines</h2>
-
-  <app-listado-peliculas [peliculas]="peliculasEnCines"></app-listado-peliculas>
-
-  <h2>Futuros Estrenos</h2>
-
-  <app-listado-peliculas
-    [peliculas]="peliculasProximosEstrenos"
-  ></app-listado-peliculas>
 </div>
