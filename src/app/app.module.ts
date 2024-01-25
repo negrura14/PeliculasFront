@@ -11,6 +11,12 @@ import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilidades/rating/rating.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { IndiceGenerosComponent } from './generos/indice-generos/indice-generos.component';
+import { CrearGeneroComponent } from './generos/crear-genero/crear-genero.component';
+import { IndiceActoresComponent } from './actores/indice-actores/indice-actores.component';
+import { CrearActorComponent } from './actores/crear-actor/crear-actor.component';
+import { CrearPeliculasComponent } from './peliculas/crear-peliculas/crear-peliculas.component';
+import { CrearCinesComponent } from './cines/crear-cines/crear-cines.component';
+import { IndiceCinesComponent } from './cines/indice-cines/indice-cines.component';
 
 
 @NgModule({
@@ -22,6 +28,12 @@ import { IndiceGenerosComponent } from './generos/indice-generos/indice-generos.
     RatingComponent,
     LandingPageComponent,
     IndiceGenerosComponent,
+    CrearGeneroComponent,
+    IndiceActoresComponent,
+    CrearActorComponent,
+    CrearPeliculasComponent,
+    CrearCinesComponent,
+    IndiceCinesComponent,
     
   ],
   imports: [
