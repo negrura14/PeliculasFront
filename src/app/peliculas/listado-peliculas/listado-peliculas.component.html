@@ -9,10 +9,11 @@
       class="pelicula-contenedor"
     >
       <div>
-        pelicula {{ index }} : {{ pelicula.titulo | uppercase }}
+        <h2>pelicula {{ index }} : {{ pelicula.titulo | uppercase }}
         <button style="margin-left: 1rem" (click)="remover(index)">
           Remover
         </button>
+      </h2>
       </div>
 
       <div>

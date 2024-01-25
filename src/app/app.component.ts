@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
           precio: 300.99,
         },
       ];
-    }, 2000);
+    }, 500);
   }
   title = 'front-end';
   ocultar = false;
