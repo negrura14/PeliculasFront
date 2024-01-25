@@ -25,4 +25,8 @@ export class AppComponent implements OnInit {
   title = 'front-end';
   peliculasEnCines: any;
   peliculasProximosEstrenos = [];
+
+  manejarRated(voto: number) : void {
+    alert(voto);
+  }
 }
