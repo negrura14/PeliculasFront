@@ -63,7 +63,7 @@ const routes: Routes = [
     path: 'peliculas/editar/:id',
     component: EditarPeliculaComponent,
   },
-  //! si la ruta es invalida redirige al inicio
+  //! Wildcard: si la ruta es invalida redirige al inicio
   {path: '**',redirectTo: '' }
   
   
