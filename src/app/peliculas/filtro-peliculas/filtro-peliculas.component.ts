@@ -55,7 +55,7 @@ export class FiltroPeliculasComponent implements OnInit {
       proximosEstrenos: false,
       generos: [2],
       poster:
-        'https://pics.filmaffinity.com/Dioses_de_Egipto-961106643-large.jpg',
+        'https://miro.medium.com/v2/resize:fit:1400/1*TBFORP0mTe2HMQ4opGvBnA.jpeg',
     },
     {
       titulo: 'Irene, Yo y Mi Otro Yo',
