@@ -14,10 +14,10 @@ export class FormularioActoresComponent implements OnInit {
   form: any = FormGroup;
 
   @Input()
-  modelo: actorDTO = {nombre: 'Emanuel', fechaNacimiento: new Date(), foto: 'https://depor.com/resizer/95KlmBdMxi4wk3SWjIVgaDYB2y4=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/AKKEMFCVPJFNRKTC2P4YLLGEJI.png'}
+  modelo: actorDTO = {nombre: 'Emanuel', fechaNacimiento: new Date(), foto: ''}
 
   @Output()
-  submit: EventEmitter<actorCreacionDTO> = new EventEmitter<actorCreacionDTO>();
+  OnSubmit: EventEmitter<actorCreacionDTO> = new EventEmitter<actorCreacionDTO>();
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -28,6 +28,7 @@ export class FormularioActoresComponent implements OnInit {
   ],
   fechaNacimiento: '',
   foto: '',
+  biografia: '',
     })
 
     if(this.modelo !== undefined){
@@ -38,8 +39,13 @@ export class FormularioActoresComponent implements OnInit {
   archivoSeleccionado(file: any){
     this.form.get('foto').setValue(file)
   }
+
+  cambioMarkdown(texto: string) {
+    this.form.get('biografia').setValue(texto)
+  }
+
   onsubmit(){
-    this.submit.emit(this.form.value)
+    this.OnSubmit.emit(this.form.value)
   }
 
 }

@@ -1,4 +1,4 @@
-<form (submit)="submit" [formGroup]="form">
+<form (submit)="OnSubmit" [formGroup]="form">
   <mat-form-field appearance="outline">
     <mat-label>Nombre*</mat-label>
     <input formControlName="nombre" matInput />
@@ -17,6 +17,8 @@
 
   <app-input-img [urlImagenActual]="modelo.foto" (archivoSeleccionado)="archivoSeleccionado($event)"></app-input-img>
   
+  <app-input-markdown (changeMarkdown)="cambioMarkdown($event)"></app-input-markdown>
+
   <div>
     <button mat-flat-button color="primary" [disabled]="form.invalid">
       Guardar Cambios
