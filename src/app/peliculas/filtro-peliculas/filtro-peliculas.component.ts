@@ -42,7 +42,7 @@ export class FiltroPeliculasComponent implements OnInit {
 
   peliculas = [
     {
-      titulo: 'Spider-Man: Far From Home',
+      titulo: 'Spider-Man: lejos de casa',
       enCines: false,
       proximosEstrenos: true,
       generos: [1, 2],
@@ -64,6 +64,14 @@ export class FiltroPeliculasComponent implements OnInit {
       generos: [3],
       poster:
         'https://play-lh.googleusercontent.com/eCxNI53pMqfvUbyzjYYmYlBlufhiQJtmRFYyMJw-aP_84pSJuqbSGzAq219TWIDA-kA=w240-h480-rw',
+    },
+    {
+      titulo: 'Avengers: Endgame',
+      enCines: false,
+      proximosEstrenos: true,
+      generos: [1, 2],
+      poster:
+        'https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg',
     },
   ];
 
