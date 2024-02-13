@@ -37,16 +37,18 @@ export class MapaComponent implements OnInit {
     const longitud = event.latlng.lng;
     console.log({latitud, longitud});
     this.capas = []
-    this.capas.push(marker([latitud, longitud], {
-      icon: icon({
-        iconSize: [25, 41],
-        iconAnchor: [13, 41],
-        iconUrl: 'marker-icon.png',
-        iconRetinaUrl: 'marker-icon-2x.png',
-        shadowUrl: 'assets/marker-shadow.png'
-      })
-    }))
+    this.capas.push(marker([latitud, longitud]))
     this.coordenadaSeleccionada.emit({latitud: latitud, longitud: longitud})
   }
 
 }
+
+// {
+//   icon: icon({
+//     iconSize: [25, 41],
+//     iconAnchor: [13, 41],
+//     iconUrl: 'marker-icon.png',
+//     iconRetinaUrl: 'marker-icon-2x.png',
+//     shadowUrl: 'assets/marker-shadow.png'
+//   })
+// }
