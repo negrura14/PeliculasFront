@@ -24,4 +24,9 @@ export class EditarPeliculaComponent implements OnInit {
     
   }
 
+  guardarCambios(pelicula: PeliculaCreacionDTO){
+    console.log(pelicula);
+    
+  }
+
 }

@@ -22,9 +22,5 @@ export class InputMarkdownComponent implements OnInit{
     
   }
 
-  inputTextArea(event: Event) {
-    const texto = (event.target as HTMLTextAreaElement).value;
-    this.contenidoMarkdown = texto;
-    this.changeMarkdown.emit(texto)
-  }
+  
 }
